@@ -11,6 +11,7 @@
 # Then use .venv/bin/python to run the various training scripts.
 
 blosc>=1.8.1,<2
+# pip install diskcache==4.1.0
 diskcache==4.1.0
 h5py
 jupyter
@@ -19,10 +20,12 @@ numpy<=1.16.4
 Pillow
 scikit-image>=0.15.0
 scipy
+# pip install SimpleITK==1.2.4
 SimpleITK
 tensorflow>=1.14,<2
 
 # The book was written targeting PyTorch 1.4, but everything in it should work fine with more up-to-date versions.
+# conda install pytorch==1.5.1 torchvision==0.6.1 cudatoolkit=10.2 -c pytorch
 torch==1.5.1
 
 # future is here due to a missing dep in caffe2
